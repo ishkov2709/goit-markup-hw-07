@@ -10,5 +10,9 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+
+    function toggleModal() {
+      document.body.classList.toggle("madal-open");
+      refs.modal.classList.toggle("is-hodden")
   }
 })();
