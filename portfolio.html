@@ -17,11 +17,80 @@
   <body>
     <!-- Page Header -->
     <header>
-      <div class="container">
+      <div class="pf-head container">
         <a href="./index.html" class="logo top"
           ><span class="logo-accent">Web</span>Studio</a
         >
-        <nav class="nax-box">
+        <button type="button" class="menu-button" data-menu-open>
+          <svg class="open-close-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" data-menu>
+          <div class="menu-box">
+            <button type="button" class="menu-close-button" data-menu-close>
+              <svg class="close-icon" width="8" height="8">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list items">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-link">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="mob-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link current">Contacts</a>
+              </li>
+            </ul>
+            <ul class="contact-list items">
+              <li class="contact-item">
+                <a href="tel:+110001111111" class="contact-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contact-item">
+                <a href="mailto:info@devstudio.com" class="contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social-list items">
+              <li class="mob-social-item">
+                <a class="mob-social-link" href="">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a class="mob-social-link" href="">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a class="mob-social-link" href="">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a class="mob-social-link" href="">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Navigation and Address -->
+        <nav class="nav-box">
           <ul class="nav-list items">
             <li class="nav-item">
               <a href="./index.html" class="nav-link">Studio</a>
@@ -32,7 +101,7 @@
             <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
-        <address>
+        <address class="address-box">
           <ul class="address-list items">
             <li class="address-item">
               <a href="mailto:info@devstudio.com" class="address-link"
@@ -55,26 +124,34 @@
           <h1 class="title">Portfolio</h1>
           <ul class="filter-list items">
             <li class="filter-item">
-              <button type="filter-button" class="button">All</button>
+              <button type="button" class="filter-button">All</button>
             </li>
             <li class="filter-item">
-              <button type="filter-button" class="button">Web Site</button>
+              <button type="button" class="filter-button">Web Site</button>
             </li>
             <li class="filter-item">
-              <button type="filter-button" class="button">App</button>
+              <button type="button" class="filter-button">App</button>
             </li>
             <li class="filter-item">
-              <button type="filter-button" class="button">Design</button>
+              <button type="button" class="filter-button">Design</button>
             </li>
             <li class="filter-item">
-              <button type="filter-button" class="button">Marketing</button>
+              <button type="button" class="filter-button">Marketing</button>
             </li>
           </ul>
           <ul class="work-list items">
             <li class="work-item list">
               <a href="#" class="link">
                 <div class="work-img">
-                  <img src="./images/bank_app.jpg" alt="Phones" width="360" />
+                  <img
+                    srcset="
+                      ./images/bank_app.jpg    1x,
+                      ./images/bank_app@2x.jpg 2x
+                    "
+                    src="./images/bank_app.jpg"
+                    alt="Phones"
+                    width="360"
+                  />
                   <p class="description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -91,6 +168,10 @@
               <a href="#" class="link">
                 <div class="work-img">
                   <img
+                    srcset="
+                      ./images/cash_pay.jpg    1x,
+                      ./images/cash_pay@2x.jpg 2x
+                    "
                     src="./images/cash_pay.jpg"
                     alt="Phone and Pos-terminal"
                     width="360"
@@ -111,6 +192,10 @@
               <a href="#" class="link">
                 <div class="work-img">
                   <img
+                    srcset="
+                      ./images/meditaion_app.jpg    1x,
+                      ./images/meditaion_app@2x.jpg 2x
+                    "
                     src="./images/meditaion_app.jpg"
                     alt="Notebook and Phone"
                     width="360"
@@ -130,7 +215,12 @@
             <li class="work-item list">
               <a href="#" class="link">
                 <div class="work-img">
-                  <img src="./images/taxi.jpg" alt="Helm" width="360" />
+                  <img
+                    srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
+                    src="./images/taxi.jpg"
+                    alt="Helm"
+                    width="360"
+                  />
                   <p class="description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -147,6 +237,10 @@
               <a href="#" class="link">
                 <div class="work-img">
                   <img
+                    srcset="
+                      ./images/illustrations.jpg    1x,
+                      ./images/illustrations@2x.jpg 2x
+                    "
                     src="./images/illustrations.jpg"
                     alt="Phone and Wallpapers"
                     width="360"
@@ -167,6 +261,10 @@
               <a href="#" class="link">
                 <div class="work-img">
                   <img
+                    srcset="
+                      ./images/online_courses.jpg    1x,
+                      ./images/online_courses@2x.jpg 2x
+                    "
                     src="./images/online_courses.jpg"
                     alt="Girl in Headphones"
                     width="360"
@@ -187,6 +285,10 @@
               <a href="#" class="link">
                 <div class="work-img">
                   <img
+                    srcset="
+                      ./images/instagram_stories.jpg    1x,
+                      ./images/instagram_stories@2x.jpg 2x
+                    "
                     src="./images/instagram_stories.jpg"
                     alt="Girl with Gadgets"
                     width="360"
@@ -207,6 +309,10 @@
               <a href="#" class="link">
                 <div class="work-img">
                   <img
+                    srcset="
+                      ./images/organic_food.jpg    1x,
+                      ./images/organic_food@2x.jpg 2x
+                    "
                     src="./images/organic_food.jpg"
                     alt="Fruits and Vegetables in a Bag"
                     width="360"
@@ -227,6 +333,10 @@
               <a href="#" class="link">
                 <div class="work-img">
                   <img
+                    srcset="
+                      ./images/fresh_coffee.jpg    1x,
+                      ./images/fresh_coffee@2x.jpg 2x
+                    "
                     src="./images/fresh_coffee.jpg"
                     alt="A Cup of Coffee"
                     width="360"
@@ -314,5 +424,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
