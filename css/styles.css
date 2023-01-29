@@ -244,6 +244,8 @@ header .container {
 
   overflow-y: scroll;
 
+  z-index: 1;
+
   transition: opacity var(--time-function);
 }
 
