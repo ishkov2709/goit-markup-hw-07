@@ -141,6 +141,10 @@ header .container {
     padding-bottom: 120px;
   }
 
+  .explan.section {
+    padding-top: 0;
+  }
+
   .portfolio.section {
     padding-top: 96px;
     padding-bottom: 120px;
